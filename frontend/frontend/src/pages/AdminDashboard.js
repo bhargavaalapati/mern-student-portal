@@ -16,7 +16,6 @@ const AdminDashboard = () => {
   const [pages, setPages] = useState(1);
   const [editingStudent, setEditingStudent] = useState(null);
   const { user } = useAuth();
-  console.log('Logged in user:', user);
 
   useEffect(() => {
     const fetchStudents = async () => {
@@ -66,6 +65,7 @@ const AdminDashboard = () => {
     <Card>
       <Card.Header as="h2" className="text-center">Admin Dashboard</Card.Header>
       <Card.Body>
+        <Card.Title>Welcome, {user?.name}!</Card.Title> {/* Display admin's name */}
         <Card.Title>All Student Records</Card.Title>
         <Table striped bordered hover responsive className="mt-3">
           <thead>

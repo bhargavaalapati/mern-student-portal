@@ -12,10 +12,8 @@ const api = axios.create({
 
 api.interceptors.request.use(
   (config) => {
-    console.log('Interceptor triggered'); // <-- ADD THIS LINE
     const user = JSON.parse(localStorage.getItem('user'));
     if (user && user.token) {
-      console.log('Token found, attaching to header:', user.token); // <-- ADD THIS LINE
       config.headers.Authorization = `Bearer ${user.token}`;
     }
     return config;
