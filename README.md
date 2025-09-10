@@ -2,9 +2,7 @@
 
 A complete, full-stack web application built from the ground up, demonstrating a comprehensive understanding of modern development practices using the MERN stack. This project serves as a production-ready blueprint for a secure, multi-user platform with role-based access control, full CRUD functionality, and a polished, responsive user interface.
 
-**[Live Demo Link](https://www.google.com/search?q=https://mern-student-portal.vercel.app/login)** | **[Backend API Link](https://www.google.com/search?q=https://student-portal-api-kmpp.onrender.com/)**
-
-_(Replace the placeholder URLs above with your live links from Vercel and Render)_
+**[Live Demo Link](https://mern-student-portal.vercel.app/login)** | **[Backend API Link](https://student-portal-api-kmpp.onrender.com/)**
 
 ## Our Journey & Architecture
 
