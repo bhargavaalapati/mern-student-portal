@@ -10,6 +10,7 @@ import SignupPage from './pages/SignupPage';
 import AdminDashboard from './pages/AdminDashboard';
 import StudentDashboard from './pages/StudentDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import NotFoundPage from './pages/NotFoundPage';
 import { Container } from 'react-bootstrap';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
               path="/student/dashboard" 
               element={<ProtectedRoute><StudentDashboard /></ProtectedRoute>} 
             />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
       </main>
       </Container>
